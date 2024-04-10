@@ -1,153 +1,159 @@
-@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
-
 *{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-body {
-    background-color: hsl(217, 54%, 11%);
-    font-family: "Outfit", sans-serif;
-    color: white;
-    font-weight: 300;
-    line-height: 1.6;
-  }
+body{
+  background: hsl(217, 54%, 11%);
+  color: white;
+  font-family: "Outfit", sans-serif;
+  font-weight: 300;
+  line-height: 1.6;
+}
 
-  .NFT-main-card {
-    background-color:hsl(216, 50%, 16%);
-    width: min(87.5%, 22rem);
-    margin: 9.5rem auto;
-    border-radius: 15px;
-    padding: 1.5rem 1.6rem 2rem;
-    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.5);
-  }
+p, .clock-text{
+color: hsl(215, 51%, 70%);  
+}
 
-  .image-container {
-    position: relative;
-    margin: 0 auto;
-    width: 100%;
-    max-width: 300px;
-  }
-  
-  .main-image {
-    display: block;
-    max-width: 300px;
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-  }
-  
-  .overlay {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    width: 100%;
-    opacity: 0;
-    background-color: hsl(178, 100%, 50%);
-    border-radius: 10px;
-  }
-  
-  .view {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    display: none;
-  }
-  
-  .image-container:hover .overlay {
-    opacity: 0.5;
-    cursor: pointer;
-  }
-  
-  .image-container:hover .overlay + .view {
-    display: block;
-  }
+.NFT-main-card{
+  background-color: hsl(216, 50%, 16%);
+  width: min(87.5%, 22rem);
+  margin: 9.5rem auto;
+  border-radius: 15px;
+  padding: 1.5rem 1.6rem 2rem;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.5);
+}
 
-  .title {
-    color: white;
-    margin: 1.4rem 0 0.75rem;
-    font-size: 1.4rem;
-    font-weight: 400;
-  }
-  
-  .description {
-    font-size: 1.1rem;
-    letter-spacing: 0.015em;
-    margin-bottom: 1rem;
-    font-weight: 300;
-  }
-  
+.NFT-image-container{
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 300px;
+}
+
+.NFT-image{
+  display: block;
+  max-width: 300px;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  background-color: hsl(178, 100%, 50%);
+  border-radius: 10px;
+}
+
+.view {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  display: none;
+}
+
+.NFT-image-container:hover .overlay{
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.NFT-image-container:hover .overlay + .view {
+  display: block;
+}
+
+.title{
+  color: white;
+  margin: 1.4rem 0 0.75rem;
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+.title:hover{
+  color: hsl(178, 100%, 50%);
+  cursor: pointer;
+}
+
+.description{
+  font-size: 1.1rem;
+  letter-spacing: 0.015rem;
+  margin-bottom: 1rem;
+  font-weight: 300;
+}
+
+.ETH-details{
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 0 1.4rem;
+}
+
+.ETH-text{
+  color: hsl(178, 100%, 50%);
+  font-weight: 600;
+}
+
+.details{
+  display: flex;
+  align-items: center;
+}
+
+.icon{
+  margin-right: 8px;
+}
+
+.profile-details{
+  display: flex;
+  align-items: center;
+  border-top: 1px solid hsl(215, 32%, 27%);
+  padding-top: 16px;
+}
+
+.profile-image{
+  border: 1px solid white;
+  border-radius: 100%;
+  width: 32px;
+  height: auto;
+}
+
+.profile-text{
+  margin-left: 20px;
+  font-weight: 300;
+}
+
+.profile-name{
+  color: white
+}
+
+.profile-name:hover{
+  color: hsl(178, 100%, 50%);
+  cursor: pointer;
+}
+
+.attribute {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribute a {
+  color: white;
+  text-decoration: none;
+}
+
+.attribute a:hover {
+  color: hsl(178, 100%, 50%);
+}
+
+@media screen and (max-width: 300px) {
   .eth-info {
-    display: flex;
-    justify-content: space-between;
-    margin: 1rem 0 1.4rem;
+    flex-direction: column;
   }
-  
-  .eth {
-    color: hsl(178, 100%, 50%);
-    font-weight: 600;
-  }
-  
-  .info {
-    display: flex;
-    align-items: center;
-  }
-  
-  .icon {
-    margin-right: 0.5rem;
-  }
-
-  .creator-info {
-    display: flex;
-    border-top: 1px solid hsl(215, 32%, 27%);
-    padding-top: 1rem;
-    align-items: center;
-  }
-  
-  .avatar {
-    border: 1px solid white;
-    border-radius: 50%;
-    width: 2rem;
-    height: auto;
-    margin-right: 1rem;
-  }
-  
-  .creator-text {
-    font-weight: 300;
-  }
-  
-  .creator-name {
-    color: white;
-  }
-  
-  .title:hover,
-  .creator-name:hover {
-    color: hsl(178, 100%, 50%);
-    cursor: pointer;
-  }
-
-  .attribution {
-    font-size: 11px;
-    text-align: center;
-  }
-  
-  .attribution a {
-    color: white;
-    text-decoration: none;
-  }
-  
-  .attribution a:hover {
-    color: hsl(178, 100%, 50%);
-  }
-  
-  @media screen and (max-width: 300px) {
-    .eth-info {
-      flex-direction: column;
-    }
-  }
+}
